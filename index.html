@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Eigen CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Home</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Mijn Website</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hoofdmenu" aria-controls="hoofdmenu" aria-expanded="false" aria-label="Navigatie openen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="hoofdmenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="overmij.html">Over mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero met achtergrondfoto -->
+  <header class="hero-section">
+    <div class="hero-overlay">
+      <div class="container">
+        <div class="hero-content text-center">
+          <h1>Mijn Website</h1>
+          <p>
+            Welkom op mijn website. Hier vind je informatie over mijn werk, interesses
+            en activiteiten. Bekijk ook de pagina Over mij en neem contact op via het formulier.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hoofdinhoud -->
+  <main class="container my-5">
+    <section class="mb-4 text-center">
+      <h2 class="mb-3">Galerij</h2>
+      <p>
+        Hieronder staan negen afbeeldingen in een responsive grid, met maximaal drie afbeeldingen per rij.
+      <br> Klik op de afbeelding en je leest meer over de foto.
+      </p>
+    </section>
+
+    <section>
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/kambo-zwolle-icon.png" alt= "kambo zwolle" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Kambo Zwolle is een diepe reset voor lichaam, ziel en geest waar gebruik wordt gemaakt van de secreta van de Boomkikker uit het Amazone gebied.</p>
+        </div>
+      </div>
+      <p class="img-text">Kambo Zwolle</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/gezond-eten.png" alt= "gezonde voeding" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Gezonde Voeding is waar ik voor sta om in balans te blijven. Hierin gebruik ik voor mijzelf en mijn cursisten langzame koolhydraten en natuurlijke suikers.</p>
+        </div>
+      </div>
+      <p class="img-text">Gezonde voeding</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/sound-healing.png" alt= "sound healing" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Diepe ontspanning door klank en vibratie, waarbij je gaat droomreizen en antwoorden vindt waar je in het dagelijkse leven niet snel bij komt.</p>
+        </div>
+      </div>
+      <p class="img-text">Sound healing</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/trainingen.png" alt= "trainingen" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Trainingen voor spirituele ontwikkeling, waarbij je leert om je stem op een helende manier in te zetten. Ook vind je trainingen in het werken met klankfrequenties.</p>
+        </div>
+      </div>
+      <p class="img-text">Trainingen</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/livingjoy-logo.png" alt= "livingjoy" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Living Joy is mijn praktijk voor energetische therapie, waarin ik werk met healing, sjamanistische technieken en klank.</p>
+        </div>
+      </div>
+      <p class="img-text">Living Joy</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/klank-concert.png" alt= "klank concert" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Klankconcerten voor rust, verbinding met jezelf en verdieping. Het geeft ontspanning en de antwoorden die je in jezelf zoekt.</p>
+        </div>
+      </div>
+      <p class="img-text">Klankconcert</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/zenitweb.png" alt= "webdisign" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Zenit-web is mijn nieuwe creatie. Ik hou van dit werk en inmiddels help ik andere bewuste ondernemers met een fantastische website.</p>
+        </div>
+      </div>
+      <p class="img-text">Creatief webdesign project.</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/kambo-zwolle-ceremonie.png" alt= "kambo ceremonie" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>Traditionele ceremonie met diepe ontgifting wat werkt tegen diverse lichamelijke en geestelijke disbalans. De kracht van Kambô is op gebied van trauma, waarbij op diepere traumalagen wordt losgelaten.</p>
+        </div>
+      </div>
+      <p class="img-text">Ceremonie</p>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4 text-center">
+      <div class="image-card" onclick="toggleOverlay(this)">
+        <img src="img/consult.png" alt= "praktijk livingjoy" class="img-fluid gallery-img">
+        <div class="image-overlay">
+          <p>In mijn praktijk LivingJoy werk ik op het lichaamsbewustzijn, zodat mensen écht kunnen landen in hun lichaam.</p>
+        </div>
+      </div>
+      <p class="img-text">Persoonlijke begeleiding en consult.</p>
+    </div>
+
+  </div>
+</section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer text-white d-flex align-items-center justify-content-center text-center">
+    <div>
+      <p class="mb-1">&copy; 2026 Mijn Website</p>
+      <p class="mb-0">Gemaakt door Brenda Wielders</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+function toggleOverlay(card) {
+  const allCards = document.querySelectorAll('.image-card');
+
+  allCards.forEach(function(item) {
+    if (item !== card) {
+      item.classList.remove('active');
+    }
+  });
+
+  card.classList.toggle('active');
+}
+</script>
+</body>
+</html>

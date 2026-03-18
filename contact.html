@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Eigen CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Contact</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Mijn Website</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hoofdmenu" aria-controls="hoofdmenu" aria-expanded="false" aria-label="Navigatie openen">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="hoofdmenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="overmij.html">Over mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <section class="content-box">
+      <div class="row g-4 align-items-start">
+
+        <!-- Linkerkant: afbeelding -->
+        <div class="col-12 col-md-5">
+          <img src="img/consult.png" alt="Contact afbeelding" class="img-fluid contact-img">
+        </div>
+
+        <!-- Rechterkant: tekst + formulier -->
+        <div class="col-12 col-md-7">
+          <div class="mb-4">
+            <h1 class="mb-3">Contact</h1>
+            <p>
+              Heb je een vraag of wil je meer informatie? Vul dan het contactformulier hieronder in.
+              Je bericht wordt via Formspree verzonden.
+            </p>
+            <p>
+              Laat je naam, e-mailadres en bericht achter. Ik neem daarna zo snel mogelijk contact met je op.
+            </p>
+          </div>
+
+          <form action="https://formspree.io/f/mnnykgpa" method="POST">
+            <div class="mb-3">
+              <label for="naam" class="form-label">Naam</label>
+              <input
+                type="text"
+                class="form-control"
+                id="naam"
+                name="naam"
+                placeholder="Vul je naam in"
+                required
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Vul je e-mailadres in"
+                required
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="onderwerp" class="form-label">Onderwerp</label>
+              <input
+                type="text"
+                class="form-control"
+                id="onderwerp"
+                name="onderwerp"
+                placeholder="Waar gaat je bericht over?"
+              >
+            </div>
+
+            <div class="mb-3">
+              <label for="bericht" class="form-label">Bericht</label>
+              <textarea
+                class="form-control"
+                id="bericht"
+                name="bericht"
+                rows="6"
+                placeholder="Typ hier je bericht"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Optioneel: onderwerp van de mail -->
+            <input type="hidden" name="_subject" value="Nieuw bericht via mijn website">
+
+            <!-- Optioneel: spam-bescherming -->
+            <input type="text" name="_gotcha" style="display:none">
+
+            <button type="submit" class="btn custom-btn">Verzenden</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer text-white d-flex align-items-center justify-content-center text-center">
+    <div>
+      <p class="mb-1">&copy; 2026 Mijn Website</p>
+      <p class="mb-0">Gemaakt door Brenda Wielders</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
